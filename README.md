@@ -25,6 +25,8 @@
 
 **Cloud-Guardian- 让云计算更简单，更经济！**
 
+
+
 ------
 
 
@@ -43,6 +45,8 @@
 
 ![status_disabled](./.res/status_disabled.png)
 
+
+
 ------
 
 
@@ -60,26 +64,48 @@
 ##### 谷歌云永久免费服务器限制要求：
 
 - 地区限制：在美国的以下区域俄勒冈、爱荷华、南卡罗来纳；
+
 - 磁盘限制：30 GB 标准永久性磁盘
+
 - 网络服务层级：标准（每个区域每月可免费传输200GB数据）
+
+  
+
+------
 
 
 
 #### 使用方法：
 
 ```
-cd ~
 sudo apt remove -y --purge man-db
-sudo apt install git
+sudo apt install -y git
+
+cd ~
 git clone https://github.com/yongxin-ms/CloudGuardian.git
 cd CloudGuardian
 cp .env.example .env
 
 sudo vim /etc/crontab
 
-# Append the following line
+# Append the following line to crontab
 * * * * * root cd /home/{YOUR_USER_NAME}/CloudGuardian/ && ./run.sh
 ```
+
+
+
+------
+
+
+
+#### 热心老板请我喝杯咖啡，请随意！
+
+| ![pay_tencent](./.res/pay_tencent.png) | ![pay_ali](./.res/pay_ali.png) |
+| -------------------------------------- | ------------------------------ |
+
+
+
+------
 
 
 
@@ -87,4 +113,4 @@ sudo vim /etc/crontab
 
 您的支持是我坚持的动力，感谢！
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yongxin-ms/CloudGuardianPub&type==Date)
+![Star History Chart](https://api.star-history.com/svg?repos=yongxin-ms/CloudGuardianPub&type==Date)
