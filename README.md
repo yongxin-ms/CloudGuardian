@@ -24,3 +24,11 @@
 **立即行动，开启您的永久免费 Google Cloud VPS 之旅！**
 
 **Cloud-Guardian- 让云计算更简单，更经济！**
+
+
+
+感谢！请赞助时备注邮箱
+
+| ![pay_tencent](.res\pay_tencent.png) | ![pay_ali](.res\pay_ali.png) | ![group_qq](.res\group_qq.JPG) |
+| ------------------------------------ | ---------------------------- | ------------------------------ |
+
