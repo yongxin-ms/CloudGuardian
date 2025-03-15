@@ -65,6 +65,22 @@
 
 
 
+```
+cd ~
+sudo apt remove -y --purge man-db
+sudo apt install git
+git clone https://github.com/yongxin-ms/CloudGuardianPub.git
+cd CloudGuardianPub
+cp .env.example .env
+
+sudo vim /etc/crontab
+
+# Append
+* * * * * root cd /home/{YOUR_USER_NAME}/CloudGuardianPub/ && ./run.sh
+```
+
+
+
 #### 欢迎打赏，入群讨论，前100个入群用户免费享用
 
 本产品包括本群不提供、不讨论任何违规使用互联网的话题、方法。
