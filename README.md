@@ -27,6 +27,20 @@
 
 
 
+效果展示：
+
+下面以每天0.3G流量上限为例（这个数值可修改，GCP实际每天可使用6G上传流量，只要每月不超过200G即可）展示一下效果：
+
+达到额度之前：
+
+![status_enabled](./.res/status_enabled.png)
+
+达到额度之后：
+
+![status_disabled](./.res/status_disabled.png)
+
+
+
 感谢！请赞助时备注邮箱
 
 | ![pay_tencent](./.res/pay_tencent.png) | ![pay_ali](./.res/pay_ali.png) | ![group_qq](./.res/group_qq.JPG) |
