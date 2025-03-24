@@ -91,4 +91,4 @@ sudo vim /etc/crontab
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=yongxin-ms/CloudGuardian&type=Date)](https://www.star-history.com/#yongxin-ms/CloudGuardian&Date)
+<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://www.star-history.com/embed?secret=Z2hwX3YxTHh2aEFjN1JOS3VmZkx6TVhNVXNuYkxhcHJoYTRMbE5NbA==#yongxin-ms/CloudGuardian&Date" frameBorder="0"></iframe>
