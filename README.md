@@ -2,7 +2,7 @@
 
 还在为 Google Cloud 虚拟机一不小心产生的高昂的流量费用而烦恼吗？现在，这一切都将成为过去！
 
-**Cloud-Guardian助您轻松掌控 Google Cloud 虚拟机流量，将每月 200G 免费流量用到极致，彻底告别额外费用，放心使用，永久免费！**
+**Cloud-Guardian 助您轻松掌控 Google Cloud 虚拟机流量，将每月 200G 免费流量用到极致，彻底告别额外费用，放心使用，永久免费！**
 
 **核心优势：**
 
@@ -25,41 +25,29 @@
 
 **Cloud-Guardian- 让云计算更简单，更经济！**
 
-
-
-------
-
-
+---
 
 #### 效果展示：
 
-以每天0.25G流量上限为例（这个数值可修改，**GCP实际每天可使用6G上传流量，只要每月不超过200G即可**）展示一下效果：
+以每天 0.25G 流量上限为例（这个数值可修改，**GCP 实际每天可使用 6G 上传流量，只要每月不超过 200G 即可**）展示一下效果：
 
 ##### 达到额度之前：
 
 ![status_enabled](./.res/status_enabled.png)
 
-
-
 ##### 达到额度之后：
 
 ![status_disabled](./.res/status_disabled.png)
 
-
-
-------
-
-
+---
 
 #### 环境准备：
 
 ##### 请自备：
 
-- Google账户
-- 信用卡，用于将Google账户升级到付费账户
-- GCP VPS，每月200GB免费标准层，VPS创建方法请自己搜索，这里不提供。
-
-
+- Google 账户
+- 信用卡，用于将 Google 账户升级到付费账户
+- GCP VPS，每月 200GB 免费标准层，VPS 创建方法请自己搜索，这里不提供。
 
 ##### 谷歌云永久免费服务器限制要求：
 
@@ -67,13 +55,9 @@
 
 - 磁盘限制：30 GB 标准永久性磁盘
 
-- 网络服务层级：标准（每个区域每月可免费传输200GB数据）
+- 网络服务层级：标准（每个区域每月可免费传输 200GB 数据）
 
-  
-
-------
-
-
+---
 
 #### 使用方法：
 
@@ -92,25 +76,19 @@ sudo vim /etc/crontab
 * * * * * root cd /home/{YOUR_USER_NAME}/CloudGuardian/ && ./run.sh
 ```
 
-
-
-------
-
-
+---
 
 #### 热心老板请我喝杯咖啡，请随意！
 
 | ![pay_tencent](./.res/pay_tencent.png) | ![pay_ali](./.res/pay_ali.png) |
 | -------------------------------------- | ------------------------------ |
 
-
-
-------
-
-
+---
 
 **如果你觉得这个工具有用，麻烦请 Star，如果您有意见或者建议，欢迎提 Issue！**
 
 您的支持是我坚持的动力，感谢！
 
-![Star History Chart](https://api.star-history.com/svg?repos=yongxin-ms/CloudGuardianPub&type==Date)
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=yongxin-ms/CloudGuardian&type=Date)](https://www.star-history.com/#yongxin-ms/CloudGuardian&Date)
