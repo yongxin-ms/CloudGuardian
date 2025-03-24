@@ -88,7 +88,3 @@ sudo vim /etc/crontab
 **如果你觉得这个工具有用，麻烦请 Star，如果您有意见或者建议，欢迎提 Issue！**
 
 您的支持是我坚持的动力，感谢！
-
-## Star History
-
-<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://www.star-history.com/embed?secret=Z2hwX3YxTHh2aEFjN1JOS3VmZkx6TVhNVXNuYkxhcHJoYTRMbE5NbA==#yongxin-ms/CloudGuardian&Date" frameBorder="0"></iframe>
