@@ -13,5 +13,3 @@ if ! systemctl is-active --quiet nginx; then
     systemctl start nginx
     echo "$(date +%Y%m%d-%H:%M:%M) nginx started."
 fi
-
-

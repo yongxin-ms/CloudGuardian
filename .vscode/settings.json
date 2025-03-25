@@ -1,0 +1,21 @@
+{
+  "editor.tabSize": 4,
+  "editor.useTabStops": false,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.printWidth": 100,
+  "[shellscript]": {
+    // PowerShell extension
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  //"editor.renderWhitespace": "all",
+  //"editor.renderControlCharacters": true,
+  "files.trimTrailingWhitespace": true,
+  "files.encoding": "utf8bom",
+  "files.autoGuessEncoding": true
+}
