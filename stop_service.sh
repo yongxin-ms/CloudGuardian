@@ -13,4 +13,3 @@ if systemctl is-active --quiet nginx; then
     systemctl stop nginx
     echo "$(date +%Y%m%d-%H:%M:%M) nginx stopped."
 fi
-

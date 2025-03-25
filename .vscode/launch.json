@@ -1,0 +1,8 @@
+{
+    "type": "bashdb",
+    "request": "launch",
+    "name": "Bash simple",
+    "cwd": "${workspaceFolder}",
+    "program": "${file}",
+    "terminalKind": "integrated",
+}
