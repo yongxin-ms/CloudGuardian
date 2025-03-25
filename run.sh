@@ -33,7 +33,7 @@ if [ $(date --date="@$LAST_UPDATE" +%Y%m%d) -ne $(date +%Y%m%d) ]; then
     echo "$(date +%Y%m%d-%H:%M:%M) New day, reset addup and start the service."
     ADD_UP=0
     LAST_UPDATE=$TIME_NOW
-    
+
     # invoke start_service.sh
     ./start_service.sh
 fi
