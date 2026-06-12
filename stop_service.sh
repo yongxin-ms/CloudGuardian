@@ -13,3 +13,10 @@ if systemctl is-active --quiet nginx; then
     systemctl stop nginx
     echo "$(date +%Y%m%d-%H:%M:%M) nginx stopped."
 fi
+
+# Check if x-ui is running
+if systemctl is-active --quiet x-ui; then
+    echo "$(date +%Y%m%d-%H:%M:%M) Stopping x-ui..."
+    x-ui stop
+    echo "$(date +%Y%m%d-%H:%M:%M) x-ui stopped."
+fi
