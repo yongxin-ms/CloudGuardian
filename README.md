@@ -70,11 +70,25 @@ git clone https://github.com/yongxin-ms/CloudGuardian.git
 cd CloudGuardian
 cp .env.example .env
 
+#为 .env文件中 TX_BYTES_LIMIT 设定阈值，缺省为6G每天，一般不用修改
+
 sudo vim /etc/crontab
 
 # Append the following line to crontab
 * * * * * root cd /home/{YOUR_USER_NAME}/CloudGuardian/ && ./run.sh
 ```
+
+
+
+缺省会关闭和启动的服务包括：
+
+- v2ray
+- nginx
+- x-ui
+
+可以在start_service.sh和stop_service.sh中自定义你想开关的服务
+
+
 
 ---
 
