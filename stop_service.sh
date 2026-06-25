@@ -20,3 +20,10 @@ if systemctl is-active --quiet x-ui; then
     x-ui stop
     echo "$(date +%Y%m%d-%H:%M:%M) x-ui stopped."
 fi
+
+# Check if sing-box is running
+if systemctl is-active --quiet sing-box; then
+    echo "$(date +%Y%m%d-%H:%M:%M) Stopping sing-box..."
+    systemctl stop sing-box
+    echo "$(date +%Y%m%d-%H:%M:%M) sing-box stopped."
+fi
