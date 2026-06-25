@@ -20,3 +20,10 @@ if ! systemctl is-active --quiet x-ui; then
     systemctl start x-ui
     echo "$(date +%Y%m%d-%H:%M:%M) x-ui started."
 fi
+
+# Check if sing-box is running
+if ! systemctl is-active --quiet sing-box; then
+    echo "$(date +%Y%m%d-%H:%M:%M) Starting sing-box..."
+    systemctl start sing-box
+    echo "$(date +%Y%m%d-%H:%M:%M) sing-box started."
+fi
