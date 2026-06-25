@@ -80,11 +80,12 @@ sudo vim /etc/crontab
 
 
 
-缺省会关闭和启动的服务包括：
+已支持关闭和启动的服务包括：
 
-- v2ray
 - nginx
+- v2ray
 - x-ui
+- sing-box
 
 可以在start_service.sh和stop_service.sh中自定义你想开关的服务
 
@@ -92,7 +93,7 @@ sudo vim /etc/crontab
 
 ---
 
-#### 热心老板请我喝杯咖啡，请随意！
+#### 如果这个工具帮到了您，是否可请我喝杯咖啡？金额随意，谢谢！
 
 | ![pay_tencent](./.res/pay_tencent.png) | ![pay_ali](./.res/pay_ali.png) |
 | -------------------------------------- | ------------------------------ |
