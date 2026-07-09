@@ -11,7 +11,7 @@
   "prettier.printWidth": 100,
   "[shellscript]": {
     // PowerShell extension
-    "editor.defaultFormatter": "foxundermoon.shell-format"
+    "editor.defaultFormatter": "mkhl.shfmt"
   },
   //"editor.renderWhitespace": "all",
   //"editor.renderControlCharacters": true,

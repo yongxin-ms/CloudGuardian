@@ -1,3 +1,3 @@
 {
-  "recommendations": ["foxundermoon.shell-format"]
+  "recommendations": ["esbenp.prettier-vscode", "mkhl.shfmt", "timonwong.shellcheck"]
 }
