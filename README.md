@@ -87,8 +87,6 @@ sudo vim /etc/crontab
 - x-ui
 - sing-box
 
-可以在start_service.sh和stop_service.sh中自定义你想开关的服务
-
 
 
 ---
