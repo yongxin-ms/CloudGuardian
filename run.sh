@@ -7,9 +7,9 @@ die() {
 	exit 1
 }
 
-if [[ $EUID -ne 0 ]]; then
-	die "This script must be run as root" >&2
-fi
+if [[ $EUID -ne 0 ]];   then  
+		die "This script must be run as root" >&2
+		fi
 
 # Check dependencies
 command -v jq &>/dev/null || die "jq could not be found. Please install jq to run this script."
