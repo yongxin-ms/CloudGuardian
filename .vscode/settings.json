@@ -1,21 +1,27 @@
 {
-  "editor.tabSize": 4,
-  "editor.useTabStops": false,
-  "editor.insertSpaces": true,
-  "editor.detectIndentation": false,
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "prettier.tabWidth": 2,
-  "prettier.useTabs": false,
-  "prettier.printWidth": 100,
-  "[shellscript]": {
-    // PowerShell extension
-    "editor.defaultFormatter": "mkhl.shfmt"
-  },
-  //"editor.renderWhitespace": "all",
-  //"editor.renderControlCharacters": true,
-  "files.trimTrailingWhitespace": true,
-  "files.encoding": "utf8bom",
-  "files.autoGuessEncoding": true
+	"editor.tabSize": 2,
+	"editor.useTabStops": true,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.tabWidth": 2,
+	"prettier.useTabs": true,
+	"prettier.printWidth": 100,
+	"[shellscript]": {
+		"editor.tabSize": 4,
+		"editor.defaultFormatter": "mkhl.shfmt"
+	},
+	"[yaml]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.tabSize": 2,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"shellformat.flag": "-i 0 -ci -bn",
+	"files.trimTrailingWhitespace": true,
+	"files.encoding": "utf8bom",
+	"files.autoGuessEncoding": true
 }
