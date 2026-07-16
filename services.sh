@@ -27,21 +27,27 @@ for svc in "${services[@]}"; do
 	start)
 		active "$svc" && continue
 		log "Starting $svc..."
-		systemctl start "$svc" &&
-			log "$svc started." ||
+		if systemctl start "$svc"; then
+			log "$svc started."
+		else
 			err "ERROR: Failed to start $svc."
+		fi
 		;;
 	stop)
 		active "$svc" || continue
 		log "Stopping $svc..."
-		systemctl stop "$svc" &&
-			log "$svc stopped." ||
+		if systemctl stop "$svc"; then
+			log "$svc stopped."
+		else
 			err "ERROR: Failed to stop $svc."
+		fi
 		;;
 	status)
-		active "$svc" &&
-			log "$svc: running." ||
+		if active "$svc"; then
+			log "$svc: running."
+		else
 			log "$svc: not running."
+		fi
 		;;
 	esac
 done
