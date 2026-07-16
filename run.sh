@@ -17,6 +17,7 @@ command -v jq &>/dev/null || die "jq could not be found. Please install jq to ru
 # Load environment
 [[ -f .env ]] || die ".env not found. Please create a .env file."
 set -a
+# shellcheck source=/dev/null
 source .env
 set +a
 
