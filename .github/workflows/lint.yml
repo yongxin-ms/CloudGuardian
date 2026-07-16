@@ -24,6 +24,6 @@ jobs:
           go install mvdan.cc/sh/v3/cmd/shfmt@latest
           echo "$HOME/go/bin" >> $GITHUB_PATH
       - name: Check shell formatting
-        run: find . -name "*.sh" -type f -exec shfmt -i 2 -w {} +
+        run: find . -name "*.sh" -type f -print0 | xargs -0 shfmt -i 0 -ci -bn -d
       - name: ShellCheck
         uses: ludeeus/action-shellcheck@master
