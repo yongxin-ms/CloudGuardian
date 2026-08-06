@@ -25,6 +25,14 @@ set +a
 : "${NIC:?NIC is not set in .env}"
 : "${TX_BYTES_LIMIT:?TX_BYTES_LIMIT is not set in .env}"
 
+# ---- 从这里开始上锁，锁住整个"读-算-写"临界区 ----
+LOCKFILE="$(pwd)/data.json.lock"
+exec 200>"$LOCKFILE"
+if ! flock -n 200; then
+	log "Another instance is still running, skipping this run."
+	exit 0
+fi
+
 NET_OUT=$(<"/sys/class/net/${NIC}/statistics/tx_bytes")
 
 # Initialize data.json if missing
@@ -65,8 +73,10 @@ if ((ADD_UP > TX_BYTES_LIMIT)); then
 fi
 
 # Persist state
+tmp=$(mktemp "$(pwd)/data.json.XXXXXX")
 jq --argjson last_update "$LAST_UPDATE" \
 	--argjson current "$CURRENT" \
 	--argjson addup "$ADD_UP" \
 	'.last_update = $last_update | .current = $current | .addup = $addup' \
-	data.json >tmp.json && mv tmp.json data.json
+	data.json >"$tmp" && mv "$tmp" data.json
+# 脚本退出时 fd 200 自动关闭，锁自动释放
