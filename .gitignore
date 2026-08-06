@@ -1,4 +1,4 @@
 data.json
-tmp.json
+data.json.lock
 .env
 log/*.log
