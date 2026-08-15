@@ -22,7 +22,8 @@ source .env
 set +a
 
 # Validate required vars
-: "${NIC:?NIC is not set in .env}"
+: "${NIC:-$(ip -4 route show default 2>/dev/null | awk '{print $5}' | head -n 1)}"
+[[ -z "$NIC" ]] && die "NIC is not set in .env and could not be auto-detected."
 : "${TX_BYTES_LIMIT:?TX_BYTES_LIMIT is not set in .env}"
 
 # ---- 从这里开始上锁，锁住整个"读-算-写"临界区 ----
